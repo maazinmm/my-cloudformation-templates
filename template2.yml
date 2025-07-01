@@ -3,6 +3,7 @@ Description: Infrastructure of EC2 instances using CloudFormation
 
 Resources:
   Server1SecurityGroup:
+    DeletionPolicy: Delete
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: Security group for server-1
@@ -14,6 +15,7 @@ Resources:
           CidrIp: 0.0.0.0/0
 
   Server1Instance:
+    DeletionPolicy: Delete
     Type: AWS::EC2::Instance
     Properties:
       ImageId: ami-000ec6c25978d5999  # ✅ Replace with a valid AMI in your region
