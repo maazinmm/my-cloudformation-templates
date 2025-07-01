@@ -18,7 +18,7 @@ Resources:
     Properties:
       ImageId: ami-000ec6c25978d5999  # ✅ Replace with a valid AMI in your region
       InstanceType: t2.micro
-      KeyName: Maazin-key-pair       # ✅ Ensure this key pair exists in your region
+      KeyName: Mfirst-key-pair       # ✅ Ensure this key pair exists in your region
       SecurityGroups:
         - Ref: Server1SecurityGroup
       Tags:
