@@ -1,4 +1,4 @@
-deployment-file-path: my-cloudformation-templates/deployment.yaml
+template-file-path: deployment.yaml
 tags: 
   - deployment: deployment.yaml
-  - template: my-cloudformation-templates/template2.yml
+  - template: template2.yml
