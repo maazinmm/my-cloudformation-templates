@@ -1,0 +1,4 @@
+template-file-path: template2.yml
+tags: 
+  - deployment: deployment-config.yaml
+  - template: template2.yml
