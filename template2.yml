@@ -16,7 +16,7 @@ Resources:
   Server1Instance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: ami-05ffe3c48a9991133  # ✅ Replace with a valid AMI in your region
+      ImageId: ami-000ec6c25978d5999  # ✅ Replace with a valid AMI in your region
       InstanceType: t2.micro
       KeyName: Maazin-key-pair       # ✅ Ensure this key pair exists in your region
       SecurityGroups:
