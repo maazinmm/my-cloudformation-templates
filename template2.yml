@@ -21,7 +21,7 @@ Resources:
       ImageId: ami-000ec6c25978d5999  # ✅ Replace with a valid AMI in your region
       InstanceType: t2.micro
       KeyName: Mfirst-key-pair       # ✅ Ensure this key pair exists in your region
-      SecurityGroups:
+      SecurityGroupIds:
         - Ref: Server1SecurityGroup
       Tags:
         - Key: Name
