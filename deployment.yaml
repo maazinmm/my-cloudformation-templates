@@ -1,4 +1,4 @@
 template-file-path: /deployment.yaml
-# tags: 
-#   - deployment: deployment.yaml
-#   - template: template2.yml
+tags: 
+  - deployment: deployment.yaml
+  - template: template2.yml
