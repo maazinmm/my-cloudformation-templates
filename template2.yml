@@ -1,7 +1,8 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: Infrastructure of EC2 instances using cloudformation
+Description: Infrastructure of EC2 instances using CloudFormation
+
 Resources:
-  server-1-security-group:
+  Server1SecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: Security group for server-1
@@ -11,17 +12,17 @@ Resources:
           FromPort: 22
           ToPort: 22
           CidrIp: 0.0.0.0/0
-  server-1:
+
+  Server1Instance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: ami-12345678
+      ImageId: ami-05ffe3c48a9991133  # ✅ Replace with a valid AMI in your region
       InstanceType: t2.micro
-      KeyName: server-1-key-pair
+      KeyName: Maazin-key-pair       # ✅ Ensure this key pair exists in your region
       SecurityGroups:
-        - Ref: server-1-security-group
+        - Ref: Server1SecurityGroup
       Tags:
         - Key: Name
           Value: server-1
         - Key: Environment
           Value: Test
-  
