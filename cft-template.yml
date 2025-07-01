@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Infrastructure of S3 buckets for a translator application
+Resources:
+  myTranslatorInputBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: in-s3bucket-cft
+      VersioningConfiguration:
+        Status: Enabled
+      Tags:
+        - Key: Name
+          Value: my-translator-input-s3bucket
+        - Key: Environment
+          Value: Test
+  myTranslatorOutputBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: out-s3bucket-cft
+      VersioningConfiguration:
+        Status: Enabled
+      Tags:
+        - Key: Name
+          Value: my-translator-output-s3bucket
+        - Key: Environment
+          Value: Test
