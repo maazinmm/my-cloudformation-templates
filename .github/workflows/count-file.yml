@@ -5,7 +5,7 @@ on:
     branches:
       - main
 jobs:
-  count-filess:
+  count-files:
     runs-on: ubuntu-latest
 
     steps:
